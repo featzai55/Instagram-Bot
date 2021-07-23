@@ -45,7 +45,7 @@ async def download_insta(command, m, dir):
     while True:
         output = await process.stdout.readline()
         if output == b'':
-            print("Finished Output")
+            print("Finished")
             break
         if output:
             datetime_ist = datetime.now(IST)
@@ -60,12 +60,12 @@ async def download_insta(command, m, dir):
     while True:
         error = await process.stderr.readline()
         if error == b'':
-            print("Finished No error")
+            print("Finished")
             break
         if error:
             datetime_ist = datetime.now(IST)
             ISTIME = datetime_ist.strftime("%I:%M:%S %p - %d %B %Y")
-            ermsg="ERROR ❌ : <code>{}</code>\nLast Updated : <code>{}</code>".format(error.decode("UTF8"), ISTIME)
+            ermsg="Error" : <code>{}</code>\nLast Updated : <code>{}</code>".format(error.decode("UTF8"), ISTIME)
             try:
                 await m.edit(ermsg)
             except:
@@ -76,9 +76,9 @@ async def download_insta(command, m, dir):
 
 def acc_type(val):
     if(val):
-        return "🔒Private🔒"
+        return "Private"
     else:
-        return "🔓Public🔓"
+        return "Public"
 
 def yes_or_no(val):
     if(val):
@@ -129,19 +129,19 @@ async def upload(m, bot, chat_id, dir):
         await bot.send_photo(chat_id=chat_id, photo=pic)
         up+=1
         rm-=1
-        await m.edit(f"Total: {total}\nUploaded: {up} Remaining to upload: {rm}")
+        await m.edit(f"Total: {total}\nUploaded: {up} Remaining to upload here: {rm}")
     if totalvideo==1:
         video=' '.join([str(elem) for elem in VDO])
         await bot.send_video(chat_id=chat_id, video=video)
         up+=1
         rm-=1
-        await m.edit(f"Total: {total}\nUploaded: {up} Remaining to upload: {rm}")
+        await m.edit(f"Total: {total}\nUploaded: {up} Remaining to upload here: {rm}")
     if totalgif==1:
         video=' '.join([str(elem) for elem in GIF])
         await bot.send_video(chat_id=chat_id, video=video)
         up+=1
         rm-=1
-        await m.edit(f"Total: {total}\nUploaded: {up} Remaining to upload: {rm}")
+        await m.edit(f"Total: {total}\nUploaded: {up} Remaining to upload here: {rm}")
     if totalpics >= 2:
         for i in range(0, len(PIC), 10):
             chunk = PIC[i:i + 10]
@@ -156,7 +156,7 @@ async def upload(m, bot, chat_id, dir):
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 await bot.send_media_group(chat_id=chat_id, media=media, disable_notification=True)
-            await m.edit(f"Total: {total}\nUploaded: {up} Remaining to upload: {rm}")
+            await m.edit(f"Total: {total}\nUploaded: {up} Remaining to upload here: {rm}")
 
     if totalvideo >= 2:
         for i in range(0, len(VDO), 10):
@@ -172,7 +172,7 @@ async def upload(m, bot, chat_id, dir):
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 await bot.send_media_group(chat_id=chat_id, media=media, disable_notification=True)
-            await m.edit(f"Total: {total}\nUploaded: {up} Remaining to upload: {rm}")
+            await m.edit(f"Total: {total}\nUploaded: {up} Remaining to upload here: {rm}")
     if totalgif >= 2:
         for gif in GIF:
             try:
@@ -188,16 +188,16 @@ async def upload(m, bot, chat_id, dir):
     await m.unpin()
     await bot.send_message(
         chat_id=chat_id,
-        text=f"Succesfully Uploaded {up} Files to Telegram.\nIf you found me helpfull Join My Updates Channel",
+        text=f"finally, Succesfully Uploaded {up} Files to Telegram.\nI wanna die now",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-					InlineKeyboardButton("👨🏼‍💻Developer", url='https://t.me/subinps'),
-					InlineKeyboardButton("🤖Other Bots", url="https://t.me/subin_works/122")
+					InlineKeyboardButton("Owner", url='https://t.me/featzai'),
+					InlineKeyboardButton("Report bugs", url="https://t.me/ftfridaybot")
 				],
 				[
-					InlineKeyboardButton("🔗Source Code", url="https://github.com/subinps/Instagram-Bot"),
-                    InlineKeyboardButton("⚡️Update Channel", url="https://t.me/subin_works")
+					InlineKeyboardButton("ig id", url="https://instagram.com/feat.zai"),
+                    InlineKeyboardButton("Yt bot", url="https://t.me/mikusongbot")
 				]
 			]
 			)
