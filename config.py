@@ -11,29 +11,29 @@ class Config:
     STATUS = set(int(x) for x in (S).split())
     L=Instaloader()
     HELP="""
-You can Download almost anything From your Instagram Account.
+I can Download almost anything From your Instagram Account hehe.
 
 <b>What Can Be Downloaded?:</b>
 
 1. All posts of any Profile. (Both Public and Private,for private profiles you need to be a follower.)
-2. All Posts from your feed.
+2. All Posts from your feed(but don't try to spam).
 3. Stories of any profile (Both Public and Private,for private profiles you need to be a follower.)
-4. DP of any profile (No need to follow)
-5. Followers and Followees List of any Profile.
-6. List of followees who follows back the given username.
-7. List of followees who are not following back the given username.
-8. Stories of your Followees.
+4. DP of any profile
+5. Followers and Following List of any Profile.
+6. List of followers who follows back the given username.
+7. List of followers who are not following back the given username.
+8. Stories of your Followers.
 9. Tagged posts of any profile.
 10. Your saved Posts.
 11. IGTV videos.
 12. Highlights from any profiles.
 13. Any Public Post from Link(Post/Reels/IGTV)
-
+I can do anything sir
 
 <b>How to Download:</b>
 
 Its Easy!!
-You Need to login into your account by /login. 
+But login first with /login command. 
 
 You have two Options:
 
@@ -42,70 +42,64 @@ You have two Options:
 Just send any instagram username.
 
 For Example:
-<code>samantharuthprabhuoffl</code>
-<code>subin_p_s_</code>
-<code>_chill_manh_7</code>
+<code>feat.zai</code>
+<code>z4iee</code>
+<code>2ampillow</code>
 
 
 2. From URL:
 
 You can also sent a post link to download the post or video.
 
-For Example:
-<code>https://www.instagram.com/p/CL4QbUiLRNW/?utm_medium=copy_link</code>
 
 
 <b>Available Commands and Usage</b>
 
-/start - Check wheather bot alive.
-/restart - Restart the bot (If you messed up anything use /restart.)
-/help - Shows this menu.
-/login - Login into your account.
+/start - To check whether I'm alive! But seriously I wanna die.
+/restart - Restart me ofc (If you messed up anything use /restart to cool me down.)
+/help - Shows this sh*t.
+/login - ofc Login into your account.
 /logout - Logout of your account.
-/account - Shows the details of logged in account.
+/account - Shows the details of ur acc.
 
-/posts <username> - Download posts of any username. Use /posts to download own posts or <code> /posts <username> </code>for others.
-Example : <code>/posts samantharuthprabhuoffl</code>
+/posts <username> - Download posts of any username. Use /posts to download own posts.
+Example : why should I provide you? 
 
-/igtv <username> - Download IGTV videos from given username. If no username given, downloads your IGTV.
+/igtv <username> - Downloads igtv video even though who sees igtv videos.
 
-/feed <number of posts to download> - Downloads posts from your feed.If no number specified all posts from feed will be downloaded.
-Example: <code>/feed 10</code> to download latest 10 posts from feed.
+/feed <number of posts to download> - Downloads posts from your feed (provide no of posts). .
+Eg: <code>/feed 10</code> to download latest 10 posts from feed.
 
-/saved <number of posts to download> - Downloads your saved posts. If no number specified all saved posts will be downloaded.
+/saved <number of posts to download> - Downloads your saved posts(remember to provide no of posts). 
 Example: <code>/saved 10</code> to download latest 10 saved posts.
 
-/followers <username> - Get a list of all followers of given username. If no username given, then your list will be retrieved.
-Example: <code>/followers samantharuthprabhuoffl</code>
+/followers <username> - Get a list of all followers of given username.
 
-/followees <username> - Get a list of all followees of given username. If no username given, then your list will be retrieved.
+/fans <username> - Get a list of of followees who follow back the given username.
 
-/fans <username> - Get a list of of followees who follow back the given username. If no username given, your list will be retrieved.
+/notfollowing <username> - Get a list of punks who don't follow back! .
 
-/notfollowing <username> - Get a list of followees who is not following back the given username.
+/tagged <username> - Downloads all posts in which given username is tagged. 
 
-/tagged <username> - Downloads all posts in which given username is tagged. If nothing given your tagged posts will be downloaded.
+/story <username> - Downloads all stories from given username.
 
-/story <username> - Downloads all stories from given username. If nothing given your stories will be downloaded.
+/stories - Downloads all the stories of all your followers.
 
-/stories - Downloads all the stories of all your followees.
-
-/highlights <username> - Downloads highlights from given username, If nothing given your highlights will be downloaded.
+/highlights <username> - Downloads highlights from given username.
 
 
 """
     HOME_TEXT = """
-<b>Helo, [{}](tg://user?id={})
+<b>Hi ishigami here, [{}](tg://user?id={})
 
-This is a bot of [{}](www.instagram.com/{}) to manage his Instagram account. 
-I can only work for my master [{}](tg://user?id={}).
-But you can Deploy the same bot for your use from the below source code.
+I work for my president to manage student council (ig) 
+I will only work for my master [{}](tg://user?id={}).
 
 Use /help to know What I can Do?</b>
 """
     HOME_TEXT_OWNER = """
-<b>Helo, [{}](tg://user?id={})
-I am your assistant to manage your Instagram account.
+<b>Hi, [{}](tg://user?id={})
+I'm ishgami to manage your Instagram account.
 
 Use /help to know what I can do for you.</b>
 """
